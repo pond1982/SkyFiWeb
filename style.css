@@ -1,0 +1,241 @@
+/* SkyFi marketing & support site
+   Dark navy + cyan, system fonts, mobile-first. */
+
+:root {
+  --bg: #0a0e1c;
+  --surface: #131a2e;
+  --surface-hi: #1a233d;
+  --border: rgba(40, 200, 240, 0.18);
+  --text: #ffffff;
+  --text-dim: #aab4c9;
+  --text-muted: #7c8aa3;
+  --accent: #5edcff;
+  --accent-deep: #28c8f0;
+  --accent-glow: rgba(40, 200, 240, 0.22);
+  --violet: #b66cff;
+  --maxw: 760px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI",
+               Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease;
+}
+a:hover { border-bottom-color: var(--accent); }
+
+/* ---- Layout ---- */
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+
+header.site {
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, #0a0e1c 0%, #0d1224 100%);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: saturate(140%) blur(8px);
+}
+
+header.site .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.brand {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  font-size: 18px;
+  border: 0;
+}
+
+.brand .sep { color: var(--text-muted); margin: 0 6px; font-weight: 400; }
+
+nav.site a {
+  color: var(--text-dim);
+  font-size: 15px;
+  margin-left: 22px;
+  border: 0;
+}
+nav.site a:hover { color: var(--accent); }
+nav.site a.active { color: var(--text); }
+
+main { padding: 56px 0 80px; }
+
+/* ---- Hero ---- */
+.hero {
+  text-align: center;
+  padding: 60px 0 30px;
+}
+.hero h1 {
+  font-size: 44px;
+  line-height: 1.1;
+  margin: 0 0 16px;
+  background: linear-gradient(135deg, #5edcff 0%, #b66cff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero .tagline {
+  font-size: 19px;
+  color: var(--text-dim);
+  margin: 0 auto 24px;
+  max-width: 540px;
+}
+
+/* ---- Content sections ---- */
+h2 {
+  font-size: 24px;
+  margin: 40px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+h3 {
+  font-size: 18px;
+  color: var(--accent);
+  margin: 28px 0 10px;
+  font-weight: 600;
+}
+p { color: var(--text-dim); margin: 0 0 14px; }
+ul, ol { color: var(--text-dim); padding-left: 22px; }
+li { margin: 6px 0; }
+strong { color: var(--text); font-weight: 600; }
+code {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  background: var(--surface);
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: var(--accent);
+}
+
+/* ---- Cards ---- */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px 24px;
+  margin: 18px 0;
+}
+.card.accent {
+  background: linear-gradient(135deg, var(--surface) 0%, var(--surface-hi) 100%);
+  box-shadow: 0 0 0 1px var(--border), 0 24px 64px -32px var(--accent-glow);
+}
+
+.card h3:first-child { margin-top: 0; }
+
+/* ---- Feature grid ---- */
+.features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin: 30px 0;
+}
+@media (min-width: 640px) {
+  .features { grid-template-columns: 1fr 1fr; }
+}
+
+/* ---- FAQ ---- */
+details.faq {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin: 12px 0;
+  cursor: pointer;
+}
+details.faq[open] { border-color: var(--accent-deep); }
+details.faq summary {
+  font-weight: 600;
+  color: var(--text);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+details.faq summary::-webkit-details-marker { display: none; }
+details.faq summary::after {
+  content: "+";
+  color: var(--accent);
+  font-size: 22px;
+  line-height: 1;
+}
+details.faq[open] summary::after { content: "−"; }
+details.faq .body { padding-top: 14px; }
+details.faq p:last-child { margin-bottom: 0; }
+
+/* ---- CTA buttons ---- */
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  background: var(--accent-deep);
+  color: #00111a;
+  font-weight: 700;
+  border-radius: 999px;
+  border: 0;
+  margin: 6px 4px;
+  letter-spacing: 0.02em;
+}
+.btn:hover { background: var(--accent); border: 0; }
+.btn.ghost {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent-deep);
+}
+.btn.ghost:hover { background: var(--accent-glow); }
+
+/* ---- Footer ---- */
+footer.site {
+  border-top: 1px solid var(--border);
+  padding: 32px 0;
+  color: var(--text-muted);
+  font-size: 14px;
+  text-align: center;
+  background: #080b16;
+}
+footer.site a { color: var(--text-dim); border: 0; }
+footer.site a:hover { color: var(--accent); }
+
+/* ---- Misc ---- */
+.meta {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  letter-spacing: 0.04em;
+}
+.pill {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--accent-glow);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  text-transform: uppercase;
+}
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 32px 0;
+}

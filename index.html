@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0a0e1c">
+<title>SkyFi — Sci-Fi & UFO Camera</title>
+<meta name="description" content="On-device neural sky segmentation. Cinematic UAP, monolith and FLIR-style lenses. Every frame stays on your phone.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="./">SKYFI <span class="sep">//</span> CAM</a>
+    <nav class="site">
+      <a href="./" class="active">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <section class="hero">
+    <span class="pill">On-device · No uploads</span>
+    <h1>The sky is the canvas.</h1>
+    <p class="tagline">
+      SkyFi runs Apple's neural sky segmentation locally on your iPhone and
+      replaces the sky with cinematic sci-fi effects — UAP fleets, floating
+      monoliths, Navy-FLIR-style B&amp;W. Real foreground objects occlude
+      everything automatically.
+    </p>
+    <a class="btn" href="#download">Download on the App&nbsp;Store</a>
+    <a class="btn ghost" href="support.html">Learn more</a>
+  </section>
+
+  <section>
+    <h2>Four cinematic lenses</h2>
+    <div class="features">
+      <div class="card">
+        <h3>Chaotic Sky</h3>
+        <p>Three neon-glowing UAPs drift across the sky, ringed by FLIR
+        targeting brackets. Inspired by the Navy GIMBAL / Tic-Tac / GOFAST
+        footage.</p>
+      </div>
+      <div class="card">
+        <h3>UFO Monolith</h3>
+        <p>A real-time raymarched obsidian slab floats above the city, lit
+        by a cyan fresnel edge glow. Foreground objects occlude its lower
+        edges automatically.</p>
+      </div>
+      <div class="card">
+        <h3>Debug Sky Tint</h3>
+        <p>Visualises the AI's sky mask in red. Useful for seeing exactly
+        what the neural network classifies as sky in any scene.</p>
+      </div>
+      <div class="card">
+        <h3>Original Feed</h3>
+        <p>Clean, unfiltered live camera — full 60&nbsp;fps with all the
+        smart features (FLIR toggle, aspect lock, recording) still active.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Why it's different</h2>
+
+    <div class="card accent">
+      <h3>100% on-device</h3>
+      <p>Every camera frame is processed by Apple's Core ML / Vision /
+      Metal frameworks on your iPhone's Neural Engine and GPU. No frames
+      are uploaded, stored on a server, or shared with any third party.
+      Zero network code. Zero analytics. Zero accounts.</p>
+    </div>
+
+    <div class="card">
+      <h3>Real semantic AI, not a filter</h3>
+      <p>SkyFi uses Apple's official DETR-ResNet50 semantic segmentation
+      model, which understands 201 classes of real-world objects including
+      sky. The lens effects only render where the AI says sky is — not on
+      buildings, not on people, not on trees.</p>
+    </div>
+
+    <div class="card">
+      <h3>Honest about the sky</h3>
+      <p>Point SkyFi at a wall or a ceiling and it tells you: <strong>NO SKY
+      DETECTED</strong>. The lens effect respectfully turns off and gives
+      you the unmodified camera feed back. No faked overlays where the AI
+      can't actually find sky.</p>
+    </div>
+
+    <div class="card">
+      <h3>Record what you see</h3>
+      <p>Tap the shutter to record 60&nbsp;fps H.264 video with the lens
+      effect baked in. Saved straight to your Photos library at the
+      viewfinder's aspect ratio.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Requirements</h2>
+    <ul>
+      <li>iPhone with iOS 16 or later.</li>
+      <li>Apple Neural Engine recommended (iPhone XS or newer) for best
+      performance.</li>
+      <li>Roughly 50&nbsp;MB on-disk including the bundled segmentation
+      model.</li>
+    </ul>
+  </section>
+
+  <section id="download" style="text-align:center; margin-top:48px;">
+    <h2 style="border:0; text-align:center;">Get SkyFi</h2>
+    <p style="text-align:center;">Coming soon to the App Store.</p>
+    <a class="btn ghost" href="support.html">Questions? Visit support →</a>
+  </section>
+
+</div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>SkyFi · made with Metal &amp; Core ML · <span class="meta">v1.0</span></p>
+    <p>
+      <a href="privacy.html">Privacy Policy</a> ·
+      <a href="support.html">Support</a> ·
+      <a href="mailto:support@skyfi.example">support@skyfi.example</a>
+    </p>
+    <p class="meta">© 2026 SkyFi.</p>
+  </div>
+</footer>
+
+</body>
+</html>
