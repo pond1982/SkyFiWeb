@@ -1,161 +1,141 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0a0e1c">
+<head><link href="assets/new-age/styles.css" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<meta content="#0a0e1c" name="theme-color"/>
 <title>Privacy Policy — SkyFi</title>
-<meta name="description" content="SkyFi processes every camera frame on-device. No frames leave your phone, no accounts, no analytics, no tracking.">
-<link rel="stylesheet" href="style.css">
-</head>
+<meta content="SkyFi processes every camera frame on-device. No frames leave your phone, no accounts, no analytics, no tracking." name="description"/>
+
+<link href="assets/new-age/app.css" rel="stylesheet"/></head>
 <body>
-
 <header class="site">
-  <div class="wrap">
-    <a class="brand" href="./">SKYFI <span class="sep">//</span> CAM</a>
-    <nav class="site">
-      <a href="./">Home</a>
-      <a href="privacy.html" class="active">Privacy</a>
-      <a href="support.html">Support</a>
-    </nav>
-  </div>
+<div class="wrap">
+<a class="brand" href="./">SKYFI <span class="sep">//</span> CAM</a>
+<nav class="site">
+<a href="./">Home</a>
+<a class="active" href="privacy.html">Privacy</a>
+<a href="support.html">Support</a>
+</nav>
+</div>
 </header>
-
 <main>
 <div class="wrap">
-
-  <h1 style="margin:0 0 6px;">Privacy Policy</h1>
-  <p class="meta">Last updated: 27 May 2026 · Effective on first install</p>
-
-  <div class="card accent" style="margin-top:24px;">
-    <h3 style="color: var(--accent);">The short version</h3>
-    <p>SkyFi is built around a single principle: <strong>your camera
+<h1 style="margin:0 0 6px;">Privacy Policy</h1>
+<p class="meta">Last updated: 27 May 2026 · Effective on first install</p>
+<div class="card accent" style="margin-top:24px;">
+<h3 style="color: var(--accent);">The short version</h3>
+<p>SkyFi is built around a single principle: <strong>your camera
     frames never leave your device.</strong> Every pixel is processed on
     your iPhone's Neural Engine and GPU. No frames are uploaded, no
     accounts exist, no analytics SDKs are bundled, no advertising
     identifiers are used, no network requests are made.</p>
-  </div>
-
-  <h2>1. Who we are</h2>
-  <p>SkyFi ("the app", "we", "our") is an iOS application that overlays
+</div>
+<h2>1. Who we are</h2>
+<p>SkyFi ("the app", "we", "our") is an iOS application that overlays
   real-time AI-segmented sci-fi effects on the device's camera feed.
   This privacy policy describes how the app handles user data.</p>
-  <p>For privacy questions, contact <a href="mailto:support@skyfi.example">support@skyfi.example</a>.</p>
-
-  <h2>2. What SkyFi accesses</h2>
-
-  <h3>Camera</h3>
-  <p>SkyFi requests access to your device's camera in order to display the
+<p>For privacy questions, contact <a href="mailto:support@skyfi.example">support@skyfi.example</a>.</p>
+<h2>2. What SkyFi accesses</h2>
+<h3>Camera</h3>
+<p>SkyFi requests access to your device's camera in order to display the
   live preview, run on-device neural segmentation against each frame, and
   composite the lens effect. iOS will prompt you for camera permission
   the first time you open the app. You can revoke it at any time from
   iOS Settings → Privacy &amp; Security → Camera → SkyFi.</p>
-  <p><strong>How camera frames are used:</strong> Each frame is delivered
+<p><strong>How camera frames are used:</strong> Each frame is delivered
   by AVFoundation as a CVPixelBuffer, run through Apple's Core ML &amp;
   Vision frameworks for sky segmentation, rendered through Metal and Core
   Image to produce the lens composite, and shown on screen. When you tap
   the shutter, the composited output is encoded to H.264 and written to a
   temporary file on the device.</p>
-  <p><strong>What is <em>not</em> done with camera frames:</strong> they
+<p><strong>What is <em>not</em> done with camera frames:</strong> they
   are never uploaded to any server, not sent to any third party, not
   stored anywhere on the device outside the temporary recording file
   (which is only created while you are actively recording), and not used
   for training any model.</p>
-
-  <h3>Photo Library (Add Only)</h3>
-  <p>If you record a video, SkyFi requests "Add Only" photo library
+<h3>Photo Library (Add Only)</h3>
+<p>If you record a video, SkyFi requests "Add Only" photo library
   access in order to save the recorded file to your Photos. iOS will
   prompt you the first time you save a video. You can revoke it at any
   time from iOS Settings → Privacy &amp; Security → Photos → SkyFi.</p>
-  <p>"Add Only" access means SkyFi can <strong>only write new videos.
+<p>"Add Only" access means SkyFi can <strong>only write new videos.
   It cannot read or view any of your existing photos or videos.</strong></p>
-  <p>After the recording is added to Photos, the temporary file SkyFi
+<p>After the recording is added to Photos, the temporary file SkyFi
   created in its own sandbox is immediately deleted.</p>
-
-  <h3>Photo Library (Read)</h3>
-  <p>SkyFi does <strong>not</strong> request read access to your photo
+<h3>Photo Library (Read)</h3>
+<p>SkyFi does <strong>not</strong> request read access to your photo
   library at any time.</p>
-
-  <h3>Location, Microphone, Contacts, Health, Calendar, etc.</h3>
-  <p>SkyFi does <strong>not</strong> access any of these. The app's
+<h3>Location, Microphone, Contacts, Health, Calendar, etc.</h3>
+<p>SkyFi does <strong>not</strong> access any of these. The app's
   Info.plist does not declare any related usage strings.</p>
-
-  <h2>3. What SkyFi does NOT do</h2>
-  <ul>
-    <li>No accounts, no sign-in, no user identity tracking.</li>
-    <li>No third-party analytics SDKs (no Firebase, no Mixpanel, no
+<h2>3. What SkyFi does NOT do</h2>
+<ul>
+<li>No accounts, no sign-in, no user identity tracking.</li>
+<li>No third-party analytics SDKs (no Firebase, no Mixpanel, no
         Amplitude, no Segment, etc.).</li>
-    <li>No advertising SDKs and no advertising identifier (IDFA) usage.</li>
-    <li>No App Tracking Transparency prompt — because SkyFi does not
+<li>No advertising SDKs and no advertising identifier (IDFA) usage.</li>
+<li>No App Tracking Transparency prompt — because SkyFi does not
         track.</li>
-    <li>No crash-reporting SDKs that transmit identifiable data. Standard
+<li>No crash-reporting SDKs that transmit identifiable data. Standard
         Apple-system crash reporting (visible to you in iOS Settings)
         functions if you opt-in to it at the system level.</li>
-    <li>No network calls. The app contains no HTTP client, no
+<li>No network calls. The app contains no HTTP client, no
         WebSockets, no background sync — at all.</li>
-  </ul>
-
-  <h2>4. AI model &amp; on-device processing</h2>
-  <p>SkyFi bundles Apple's official
-  <a href="https://huggingface.co/apple/coreml-detr-semantic-segmentation"
-     target="_blank" rel="noopener">DETR-ResNet50 Semantic Segmentation</a>
-  Core ML model (palette-quantized F16, ~41&nbsp;MB) for sky detection.
+</ul>
+<h2>4. AI model &amp; on-device processing</h2>
+<p>SkyFi bundles Apple's official
+  <a href="https://huggingface.co/apple/coreml-detr-semantic-segmentation" rel="noopener" target="_blank">DETR-ResNet50 Semantic Segmentation</a>
+  Core ML model (palette-quantized F16, ~41 MB) for sky detection.
   This model is pre-trained on the publicly available COCO dataset and is
   used in inference mode only — it is not fine-tuned, retrained, or
   updated using your camera frames.</p>
-  <p>The model runs on Apple's Neural Engine via the Core ML framework.
+<p>The model runs on Apple's Neural Engine via the Core ML framework.
   No data is shared with Apple, Hugging Face, or any other party as part
   of running the model.</p>
-
-  <h2>5. Children's privacy</h2>
-  <p>SkyFi does not collect any personal data from anyone, and the app
+<h2>5. Children's privacy</h2>
+<p>SkyFi does not collect any personal data from anyone, and the app
   is rated 4+ in the App Store. It is suitable for users of any age.
   We do not knowingly collect, store, or share personal data from
   children under the age of 13 (or the equivalent minimum age in your
   jurisdiction) — because we do not collect personal data from anyone.</p>
-
-  <h2>6. Your rights</h2>
-  <p>Because SkyFi does not collect any personal data, there is no data
+<h2>6. Your rights</h2>
+<p>Because SkyFi does not collect any personal data, there is no data
   to access, correct, port, or delete. You have absolute control via iOS
   Settings to revoke camera or photo-library permission at any time, or
   to delete the app and remove all of its local storage.</p>
-  <p>If you are a user in the European Economic Area (GDPR), the United
+<p>If you are a user in the European Economic Area (GDPR), the United
   Kingdom (UK GDPR), or California (CCPA / CPRA): the rights granted to
   you by those regulations are protected by virtue of SkyFi not collecting
   data in the first place.</p>
-
-  <h2>7. Changes to this policy</h2>
-  <p>If a future version of SkyFi changes any of the above — for example,
+<h2>7. Changes to this policy</h2>
+<p>If a future version of SkyFi changes any of the above — for example,
   if a new feature requires network access or third-party services — this
   page will be updated and the "Last updated" date at the top will be
   incremented. Material changes will be summarized in the corresponding
   App Store release notes.</p>
-
-  <h2>8. Contact</h2>
-  <p>For privacy questions, data-protection inquiries, or to report a
+<h2>8. Contact</h2>
+<p>For privacy questions, data-protection inquiries, or to report a
   concern, contact:</p>
-  <ul>
-    <li>Email: <a href="mailto:support@skyfi.example">support@skyfi.example</a></li>
-    <li>Or via the <a href="support.html">support page</a>.</li>
-  </ul>
-
-  <hr>
-  <p class="meta">Apple App Store Privacy Nutrition Label: <strong>Data Not Collected</strong>.</p>
-
+<ul>
+<li>Email: <a href="mailto:support@skyfi.example">support@skyfi.example</a></li>
+<li>Or via the <a href="support.html">support page</a>.</li>
+</ul>
+<hr/>
+<p class="meta">Apple App Store Privacy Nutrition Label: <strong>Data Not Collected</strong>.</p>
 </div>
 </main>
-
 <footer class="site">
-  <div class="wrap">
-    <p>SkyFi · made with Metal &amp; Core ML</p>
-    <p>
-      <a href="./">Home</a> ·
+<div class="wrap">
+<p>SkyFi · made with Metal &amp; Core ML</p>
+<p>
+<a href="./">Home</a> ·
       <a href="privacy.html">Privacy Policy</a> ·
       <a href="support.html">Support</a>
-    </p>
-    <p class="meta">© 2026 SkyFi.</p>
-  </div>
-</footer>
-
+</p>
+<p class="meta">© 2026 SkyFi.</p>
+</div>
+<nav aria-label="Developer portfolio" class="portfolio-links"><a href="https://pond1982.github.io/Pondd-Page/">Pondd · Portfolio</a><a href="https://pond1982.github.io/Pondd-Page/apps.html">All apps</a></nav></footer>
 </body>
 </html>

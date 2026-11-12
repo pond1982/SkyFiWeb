@@ -1,224 +1,202 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0a0e1c">
+<head><link href="assets/new-age/styles.css" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<meta content="#0a0e1c" name="theme-color"/>
 <title>Support — SkyFi</title>
-<meta name="description" content="Get help with SkyFi: troubleshooting, FAQ, permissions, recording, and contact.">
-<link rel="stylesheet" href="style.css">
-</head>
+<meta content="Get help with SkyFi: troubleshooting, FAQ, permissions, recording, and contact." name="description"/>
+
+<link href="assets/new-age/app.css" rel="stylesheet"/></head>
 <body>
-
 <header class="site">
-  <div class="wrap">
-    <a class="brand" href="./">SKYFI <span class="sep">//</span> CAM</a>
-    <nav class="site">
-      <a href="./">Home</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="support.html" class="active">Support</a>
-    </nav>
-  </div>
+<div class="wrap">
+<a class="brand" href="./">SKYFI <span class="sep">//</span> CAM</a>
+<nav class="site">
+<a href="./">Home</a>
+<a href="privacy.html">Privacy</a>
+<a class="active" href="support.html">Support</a>
+</nav>
+</div>
 </header>
-
 <main>
 <div class="wrap">
-
-  <h1 style="margin:0 0 6px;">Support</h1>
-  <p class="meta">SkyFi runs entirely on-device — most issues are resolved on your phone in under a minute.</p>
-
-  <div class="card accent" style="margin-top:24px;">
-    <h3 style="color: var(--accent);">Need help fast?</h3>
-    <p>Email <a href="mailto:support@skyfi.example?subject=SkyFi%20support">support@skyfi.example</a>
+<h1 style="margin:0 0 6px;">Support</h1>
+<p class="meta">SkyFi runs entirely on-device — most issues are resolved on your phone in under a minute.</p>
+<div class="card accent" style="margin-top:24px;">
+<h3 style="color: var(--accent);">Need help fast?</h3>
+<p>Email <a href="mailto:support@skyfi.example?subject=SkyFi%20support">support@skyfi.example</a>
     with your device model, iOS version, and a short description (or screenshot)
     of what you're seeing. We aim to respond within 2 business days.</p>
-  </div>
-
-  <h2>Getting started</h2>
-
-  <details class="faq">
-    <summary>How do I use SkyFi?</summary>
-    <div class="body">
-      <p>Open the app and grant camera access when prompted. The live
+</div>
+<h2>Getting started</h2>
+<details class="faq">
+<summary>How do I use SkyFi?</summary>
+<div class="body">
+<p>Open the app and grant camera access when prompted. The live
       preview appears immediately. The bottom of the screen has:</p>
-      <ul>
-        <li><strong>Lens carousel</strong> — tap to switch between Original
+<ul>
+<li><strong>Lens carousel</strong> — tap to switch between Original
             Feed, Chaotic Sky, UFO Monolith, and Debug Sky Tint.</li>
-        <li><strong>Shutter button</strong> (center) — tap once to start
+<li><strong>Shutter button</strong> (center) — tap once to start
             recording, tap again to stop and save to Photos.</li>
-        <li><strong>Aspect button</strong> (left) — toggle between 9:16
+<li><strong>Aspect button</strong> (left) — toggle between 9:16
             portrait and 16:9 horizontal recording.</li>
-        <li><strong>Camera flip button</strong> (right) — switch between
+<li><strong>Camera flip button</strong> (right) — switch between
             the back and front camera.</li>
-      </ul>
-      <p>The top-left has a <code>FLIR</code> / <code>COLOR</code> chip
+</ul>
+<p>The top-left has a <code>FLIR</code> / <code>COLOR</code> chip
       that flips the entire frame between full color and Navy-FLIR-style
       black-and-white.</p>
-    </div>
-  </details>
-
-  <details class="faq">
-    <summary>Which lens should I try first?</summary>
-    <div class="body">
-      <p>Chaotic Sky + FLIR is the most cinematic — point your phone at
+</div>
+</details>
+<details class="faq">
+<summary>Which lens should I try first?</summary>
+<div class="body">
+<p>Chaotic Sky + FLIR is the most cinematic — point your phone at
       an open sky to see three glowing UAPs drift over a B&amp;W cityscape
       with FLIR targeting brackets. Best at dusk or against an open
       horizon.</p>
-    </div>
-  </details>
-
-  <h2>Common issues</h2>
-
-  <details class="faq">
-    <summary>Why does it say "NO SKY DETECTED"?</summary>
-    <div class="body">
-      <p>SkyFi's neural network couldn't find any sky pixels in the
+</div>
+</details>
+<h2>Common issues</h2>
+<details class="faq">
+<summary>Why does it say "NO SKY DETECTED"?</summary>
+<div class="body">
+<p>SkyFi's neural network couldn't find any sky pixels in the
       current frame. This is the correct (honest) behavior when:</p>
-      <ul>
-        <li>You're pointing the camera at a wall, ceiling, or floor.</li>
-        <li>You're indoors with no visible window.</li>
-        <li>It's very dark or the scene is heavily backlit.</li>
-        <li>The frame is mostly buildings or foliage with no open sky.</li>
-      </ul>
-      <p>Point the camera somewhere that includes actual sky — even a
+<ul>
+<li>You're pointing the camera at a wall, ceiling, or floor.</li>
+<li>You're indoors with no visible window.</li>
+<li>It's very dark or the scene is heavily backlit.</li>
+<li>The frame is mostly buildings or foliage with no open sky.</li>
+</ul>
+<p>Point the camera somewhere that includes actual sky — even a
       small patch through trees — and the indicator will switch back to
       <code>LIVE</code> automatically.</p>
-    </div>
-  </details>
-
-  <details class="faq">
-    <summary>The preview is laggy / dropping frames.</summary>
-    <div class="body">
-      <p>SkyFi displays at 60&nbsp;fps independently of the AI inference
+</div>
+</details>
+<details class="faq">
+<summary>The preview is laggy / dropping frames.</summary>
+<div class="body">
+<p>SkyFi displays at 60 fps independently of the AI inference
       rate, so the live preview should always be smooth even if the sky
       mask updates a few times per second. If you see actual frame drops:</p>
-      <ul>
-        <li>Check the top-right HUD for a <code>THERMAL: HIGH</code> or
+<ul>
+<li>Check the top-right HUD for a <code>THERMAL: HIGH</code> or
             <code>THERMAL: CRITICAL</code> indicator. Under heavy thermal
             load SkyFi automatically reduces segmentation rate to protect
             your device — give it 30 seconds to cool down.</li>
-        <li>Close other camera apps in the background.</li>
-        <li>Older devices (pre-iPhone XS) lack the Apple Neural Engine
+<li>Close other camera apps in the background.</li>
+<li>Older devices (pre-iPhone XS) lack the Apple Neural Engine
             and rely on the GPU, which is slower for this model.</li>
-      </ul>
-    </div>
-  </details>
-
-  <details class="faq">
-    <summary>The lens effect "lags" behind when I move the phone.</summary>
-    <div class="body">
-      <p>This is expected. The neural network re-segments the sky every
-      ~100&nbsp;ms, but the live camera preview updates every ~16&nbsp;ms.
+</ul>
+</div>
+</details>
+<details class="faq">
+<summary>The lens effect "lags" behind when I move the phone.</summary>
+<div class="body">
+<p>This is expected. The neural network re-segments the sky every
+      ~100 ms, but the live camera preview updates every ~16 ms.
       For static or slowly-moving scenes the mask aligns perfectly. For
       rapid panning the sky mask trails by 1–2 frames. This is a
       conscious trade-off — running the network on every frame would
       drain the battery and heat the device much faster.</p>
-    </div>
-  </details>
-
-  <details class="faq">
-    <summary>I tapped the shutter but no recording saved.</summary>
-    <div class="body">
-      <p>A few possibilities:</p>
-      <ul>
-        <li><strong>Photo library permission missing.</strong> iOS Settings
+</div>
+</details>
+<details class="faq">
+<summary>I tapped the shutter but no recording saved.</summary>
+<div class="body">
+<p>A few possibilities:</p>
+<ul>
+<li><strong>Photo library permission missing.</strong> iOS Settings
             → Privacy &amp; Security → Photos → SkyFi → <em>Add Photos
             Only</em>. SkyFi only needs add-only; it never reads your
             library.</li>
-        <li><strong>Out of storage.</strong> Recording requires at least
-            ~10&nbsp;MB free for a 10-second clip.</li>
-        <li><strong>Tapped too quickly.</strong> The first 1–2 frames after
+<li><strong>Out of storage.</strong> Recording requires at least
+            ~10 MB free for a 10-second clip.</li>
+<li><strong>Tapped too quickly.</strong> The first 1–2 frames after
             tapping the shutter may not capture while the encoder
             initializes. Hold for at least one second before tapping
             again to stop.</li>
-      </ul>
-      <p>If you see a green REC chip at the top of the screen with a
+</ul>
+<p>If you see a green REC chip at the top of the screen with a
       timer counting up, recording is live. If you see the white circle
       shutter button (not red), recording is not currently active.</p>
-    </div>
-  </details>
-
-  <details class="faq">
-    <summary>The front camera doesn't flip when I tap the flip button.</summary>
-    <div class="body">
-      <p>Camera flip only works on physical iPhones. The iOS Simulator
+</div>
+</details>
+<details class="faq">
+<summary>The front camera doesn't flip when I tap the flip button.</summary>
+<div class="body">
+<p>Camera flip only works on physical iPhones. The iOS Simulator
       does not have front/back cameras, so the button is a no-op there.</p>
-    </div>
-  </details>
-
-  <details class="faq">
-    <summary>Why is the cityscape silhouette occluding the UFO?</summary>
-    <div class="body">
-      <p>That's the feature working as designed. SkyFi's segmentation
+</div>
+</details>
+<details class="faq">
+<summary>Why is the cityscape silhouette occluding the UFO?</summary>
+<div class="body">
+<p>That's the feature working as designed. SkyFi's segmentation
       identifies what is sky vs. foreground; lens effects only render in
       the sky region. So if a UFO drifts behind a building, the building
       will visibly hide its lower half — the same way a real object in
       the sky would be occluded.</p>
-    </div>
-  </details>
-
-  <h2>Permissions reference</h2>
-
-  <div class="card">
-    <h3>Camera</h3>
-    <p>Required for the live preview. Granted on first launch. Revoke via
+</div>
+</details>
+<h2>Permissions reference</h2>
+<div class="card">
+<h3>Camera</h3>
+<p>Required for the live preview. Granted on first launch. Revoke via
     <strong>iOS Settings → Privacy &amp; Security → Camera → SkyFi</strong>.
     Without it SkyFi shows the "SKYFI CALIBRATION ERROR / AUTHORIZE NEURAL
     SENSORS" screen.</p>
-  </div>
-
-  <div class="card">
-    <h3>Photos — Add Only</h3>
-    <p>Required for saving recorded videos. Granted the first time you
+</div>
+<div class="card">
+<h3>Photos — Add Only</h3>
+<p>Required for saving recorded videos. Granted the first time you
     record. Revoke via <strong>iOS Settings → Privacy &amp; Security →
     Photos → SkyFi</strong>. SkyFi requests add-only access — it cannot
     read or view your existing library.</p>
-  </div>
-
-  <h2>Device requirements</h2>
-  <ul>
-    <li>iPhone with iOS 16.0 or later.</li>
-    <li>Apple Neural Engine recommended (iPhone XS / 2018 or newer) for
+</div>
+<h2>Device requirements</h2>
+<ul>
+<li>iPhone with iOS 16.0 or later.</li>
+<li>Apple Neural Engine recommended (iPhone XS / 2018 or newer) for
         best segmentation speed.</li>
-    <li>Roughly 50&nbsp;MB free disk space for the app and bundled neural
+<li>Roughly 50 MB free disk space for the app and bundled neural
         network model.</li>
-  </ul>
-
-  <h2>Privacy &amp; data</h2>
-  <p>SkyFi does not collect, transmit, store, or share any personal data.
+</ul>
+<h2>Privacy &amp; data</h2>
+<p>SkyFi does not collect, transmit, store, or share any personal data.
   Every camera frame is processed on-device. See the
   <a href="privacy.html">Privacy Policy</a> for full details.</p>
-
-  <h2>Still stuck?</h2>
-  <div class="card">
-    <p>Email <a href="mailto:support@skyfi.example?subject=SkyFi%20support">support@skyfi.example</a>
+<h2>Still stuck?</h2>
+<div class="card">
+<p>Email <a href="mailto:support@skyfi.example?subject=SkyFi%20support">support@skyfi.example</a>
     with:</p>
-    <ul>
-      <li>iPhone model (Settings → General → About → Model Name).</li>
-      <li>iOS version (Settings → General → About → iOS Version).</li>
-      <li>SkyFi version (visible at the top of the app: <code>NEURAL
+<ul>
+<li>iPhone model (Settings → General → About → Model Name).</li>
+<li>iOS version (Settings → General → About → iOS Version).</li>
+<li>SkyFi version (visible at the top of the app: <code>NEURAL
           CAMERA PROTOCOL v1.0.x</code>).</li>
-      <li>A screenshot or short screen-recording of the issue.</li>
-      <li>What you were trying to do and what happened instead.</li>
-    </ul>
-    <p>We typically respond within 2 business days. SkyFi is a small
+<li>A screenshot or short screen-recording of the issue.</li>
+<li>What you were trying to do and what happened instead.</li>
+</ul>
+<p>We typically respond within 2 business days. SkyFi is a small
     project and there's no auto-responder bot in the loop.</p>
-  </div>
-
+</div>
 </div>
 </main>
-
 <footer class="site">
-  <div class="wrap">
-    <p>SkyFi · made with Metal &amp; Core ML</p>
-    <p>
-      <a href="./">Home</a> ·
+<div class="wrap">
+<p>SkyFi · made with Metal &amp; Core ML</p>
+<p>
+<a href="./">Home</a> ·
       <a href="privacy.html">Privacy Policy</a> ·
       <a href="support.html">Support</a>
-    </p>
-    <p class="meta">© 2026 SkyFi.</p>
-  </div>
-</footer>
-
+</p>
+<p class="meta">© 2026 SkyFi.</p>
+</div>
+<nav aria-label="Developer portfolio" class="portfolio-links"><a href="https://pond1982.github.io/Pondd-Page/">Pondd · Portfolio</a><a href="https://pond1982.github.io/Pondd-Page/apps.html">All apps</a></nav></footer>
 </body>
 </html>
